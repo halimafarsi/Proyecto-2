@@ -1,0 +1,53 @@
+{
+    "fechas": [
+      {
+        "question": "¿En qué año se fundó la primera comunidad en América?",
+        "answer": "1496"
+      },
+      {
+        "question": "¿Cuándo se estableció la primera misión en California?",
+        "answer": "1769"
+      }
+    ],
+    "cultura-g": [
+      {
+        "question": "¿Cuál es el idioma más hablado en las comunidades indígenas de México?",
+        "answer": "Náhuatl"
+      },
+      {
+        "question": "¿Qué es el 'pago a la tierra' en la cultura andina?",
+        "answer": "Un ritual de agradecimiento a la Pachamama"
+      }
+    ],
+    "personajes-celebres": [
+      {
+        "question": "¿Quién fue Bartolomé de las Casas?",
+        "answer": "Un fraile español defensor de los derechos de los indígenas"
+      },
+      {
+        "question": "¿Quién fue Rigoberta Menchú?",
+        "answer": "Una activista indígena guatemalteca y Premio Nobel de la Paz"
+      }
+    ],
+    "citas": [
+      {
+        "question": "Completa la cita: 'Sin maíz no hay ______.'",
+        "answer": "país"
+      },
+      {
+        "question": "¿Quién dijo: 'El respeto al derecho ajeno es la paz'?",
+        "answer": "Benito Juárez"
+      }
+    ],
+    "vocabulario": [
+      {
+        "question": "¿Qué significa la palabra 'huipil' en las comunidades indígenas de México?",
+        "answer": "Una prenda tradicional de las mujeres indígenas"
+      },
+      {
+        "question": "¿Qué es un 'ayllu' en la cultura andina?",
+        "answer": "Una comunidad familiar extendida con una economía compartida"
+      }
+    ]
+  }
+  

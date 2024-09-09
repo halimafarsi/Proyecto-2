@@ -1,0 +1,53 @@
+{
+    "fechas": [
+      {
+        "question": "¿En qué año se inauguró el Canal de Panamá?",
+        "answer": "1914"
+      },
+      {
+        "question": "¿Cuándo se celebró el primer Grito de Independencia en Panamá?",
+        "answer": "10 de noviembre de 1821"
+      }
+    ],
+    "cultura-g": [
+      {
+        "question": "¿Cuál es la flor nacional de Panamá?",
+        "answer": "La Flor del Espíritu Santo"
+      },
+      {
+        "question": "¿Cuál es el baile típico más representativo de Panamá?",
+        "answer": "El Tamborito"
+      }
+    ],
+    "personajes-celebres": [
+      {
+        "question": "¿Quién es conocido como el Padre de la Patria en Panamá?",
+        "answer": "Manuel Amador Guerrero"
+      },
+      {
+        "question": "¿Qué panameña ganó el Premio Nobel de la Paz en 1992?",
+        "answer": "Rigoberta Menchú"
+      }
+    ],
+    "citas": [
+      {
+        "question": "¿Quién dijo: 'Pro Mundi Beneficio'?",
+        "answer": "Manuel Amador Guerrero"
+      },
+      {
+        "question": "Completa la cita: 'Panamá, puente del mundo, ______.'",
+        "answer": "corazón del universo"
+      }
+    ],
+    "vocabulario": [
+      {
+        "question": "¿Qué significa la palabra 'guacho' en Panamá?",
+        "answer": "Una sopa espesa con arroz y carne"
+      },
+      {
+        "question": "¿Qué es una 'mola' en la cultura panameña?",
+        "answer": "Una pieza textil de arte creada por las mujeres Guna"
+      }
+    ]
+  }
+  

@@ -1,0 +1,121 @@
+{
+    "fechas": [
+    {
+      "question":"",
+      "answer":""
+    }
+],
+"cultura-g":[
+    {
+        "question": "",
+        "answer": ""
+    }
+],
+"personajes-celebres": [
+    {
+        "question": "",
+        "answer": ""
+    }
+],
+"citas":[
+    {
+        "question": "",
+        "answer": ""
+    }
+],
+"vocabulario":[
+    
+                {
+                  "answer": "Aliteración",
+                  "question": "Repetición de sonidos similares, generalmente consonantes, en palabras cercanas, ejemplo :En el silencio solo se escuchaba un susurro de abejas que sonaba."
+                },
+                {
+                  "answer": "Anáfora",
+                  "question": "Repetición de una o varias palabras al inicio de versos o frases consecutivas, ejemplo :Temprano levantó la muerte el vuelo, / temprano madrugó la madrugada, / temprano estás rondando por el suelo."
+                },
+                {
+                  "answer": "Antítesis",
+                  "question": "Contraposición de ideas o palabras de significado opuesto, ejemplo :Es tan corto el amor, y es tan largo el olvido."
+                },
+                {
+                  "answer": "Apóstrofe",
+                  "question": "Invocación directa a una persona, ser inanimado o abstracto, ejemplo :¡Oh mar, cuánto de tu sal son lágrimas de España!"
+                },
+                {
+                  "answer": "Asíndeton",
+                  "question": "Omisión de conjunciones para dar rapidez o intensidad a la expresión, ejemplo :Veni, vidi, vici (Vine, vi, vencí)."
+                },
+                {
+                  "answer": "Epíteto",
+                  "question": "Uso de adjetivos que destacan cualidades inherentes del sustantivo, ejemplo :La blanca nieve cubre el suelo."
+                },
+                {
+                  "answer": "Hipérbaton",
+                  "question": "Alteración del orden lógico o normal de las palabras en una oración, ejemplo :Del monte en la ladera / por mi mano plantado tengo un huerto."
+                },
+                {
+                  "answer": "Hipérbole",
+                  "question": "Exageración de cualidades, características o circunstancias, ejemplo :Te lo he dicho un millón de veces."
+                },
+                {
+                  "answer": "Metáfora",
+                  "question": "Comparación implícita entre dos elementos sin usar palabras como 'como', 'cual' o 'semejante a', ejemplo :Tus ojos son dos luceros."
+                },
+                {
+                  "answer": "Metonimia",
+                  "question": "Sustitución de un término por otro con el que mantiene una relación de contigüidad o proximidad, ejemplo :Leí a Cervantes (en lugar de 'leí la obra de Cervantes')."
+                },
+                {
+                  "answer": "Onomatopeya",
+                  "question": "Imitación de sonidos reales por medio del lenguaje, ejemplo :El gato hacía miau."
+                },
+                {
+                  "answer": "Oxímoron",
+                  "question": "Unión de dos términos de significado opuesto que se combinan en una misma expresión, ejemplo :Un silencio atronador."
+                },
+                {
+                  "answer": "Paradoja",
+                  "question": "Unión de ideas aparentemente contradictorias que revelan una verdad profunda, ejemplo :Vivo sin vivir en mí."
+                },
+                {
+                  "answer": "Personificación",
+                  "question": "Atribución de cualidades humanas a animales, objetos o ideas abstractas, ejemplo :Las estrellas nos miraban mientras la ciudad sonreía."
+                },
+                {
+                  "answer": "Pleonasmo",
+                  "question": "Uso de palabras innecesarias que refuerzan el significado de otra, ejemplo :Subir arriba, bajar abajo."
+                },
+                {
+                  "answer": "Polisíndeton",
+                  "question": "Repetición de conjunciones para dar énfasis o lentitud al ritmo, ejemplo :Y sufre y llora y se cansa y se desangra."
+                },
+                {
+                  "answer": "Retruécano",
+                  "question": "Repetición de una frase en sentido inverso para producir contraste o un efecto enfático, ejemplo :Vivir para amar, amar para vivir."
+                },
+                {
+                  "answer": "Símil",
+                  "question": "Comparación explícita entre dos elementos usando 'como', 'cual', 'semejante a', ejemplo :Tus labios son rojos como rubíes."
+                },
+                {
+                  "answer": "Sinécdoque",
+                  "question": "Tipo de metonimia que consiste en designar una parte por el todo o el todo por una parte, ejemplo :Tiene quince primaveras (en lugar de 'años')."
+                },
+                {
+                  "answer": "Sinestesia",
+                  "question": "Mezcla de sensaciones percibidas por distintos sentidos o la atribución de una sensación a un sentido que no le corresponde, ejemplo :Escuché un silencio blanco."
+                },
+                {
+                  "answer": "Culteranismo",
+                  "question": "Estilo que busca la belleza formal del lenguaje mediante el uso de palabras cultas, complejas metáforas, y referencias mitológicas. Su máximo exponente es Luis de Góngora, ejemplo :Uso frecuente de latinismos, neologismos, metáforas complejas y sintaxis alterada, como en 'Mientras por competir con tu cabello' de Góngora."
+                },
+                {
+                  "answer": "Conceptismo",
+                  "question": "Estilo literario que se caracteriza por el uso de juegos de palabras, agudeza conceptual y concisión expresiva. Su máximo representante es Francisco de Quevedo, ejemplo :Uso de antítesis, paradojas y dobles sentidos, como en 'Poderoso caballero es don Dinero', donde se juega con el concepto del poder del dinero."
+                }
+              ]
+  }
+          
+          
+
+

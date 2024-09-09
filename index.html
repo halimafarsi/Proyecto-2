@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas y Respuestas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Juego de Preguntas y Respuestas</h1>
+        <div id="main-menu">
+            <h2>Selecciona una categoría:</h2>
+            <button id="btnPanama">Panamá</button>
+            <button id="btnComunidades">Comunidades</button>
+            <button id="btnLiteratura">Literatura</button>
+            <button id="btnLinguistica">Lingüística</button>
+            <button id="btnCatalan">Catalán</button>
+        </div>
+
+        <div id="subcategory-menu" style="display: none;">
+            <h2>Selecciona una subcategoría:</h2>
+            <button id="btnFechas">Fechas</button>
+            <button id="btnCulturaG">Cultura G</button>
+            <button id="btnPersonajes">Personajes Célebres</button>
+            <button id="btnCitas">Citas</button>
+            <button id="btnVocabulario">Vocabulario</button>
+        </div>
+
+        <div id="game-section" style="display: none;">
+            <h2 id="category-title"></h2>
+            <p id="question-text"></p>
+            <input type="text" id="answer-input" placeholder="Escribe tu respuesta...">
+            <button id="submit-answer">Enviar Respuesta</button>
+            <p id="feedback"></p>
+            <p id="score">Puntuación: 0</p>
+        </div>
+
+        <div id="result-section" style="display: none;">
+            <h2>Resultado Final</h2>
+            <p id="final-score"></p>
+            <button id="replay-button">Jugar de nuevo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
