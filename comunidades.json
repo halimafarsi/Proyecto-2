@@ -1,53 +1,52 @@
 {
     "fechas": [
-      {
-        "question": "¿En qué año se fundó la primera comunidad en América?",
-        "answer": "1496"
-      },
-      {
-        "question": "¿Cuándo se estableció la primera misión en California?",
-        "answer": "1769"
-      }
+      { "answer": "1342", "question": "¿Cuándo fue creado el alcabala?" },
+      { "answer": "1503", "question": "¿En qué año fue concedida la Bula de cruzada por el Papa Julio II al rey Fernando el Católico?" },
+      { "answer": "1480", "question": "¿En qué año de suprimen todas las tasas, impuestos locales y peajes que impiden el paso de los rebaños transehumantes por las cabañas excepto el servicio y montazgo?" },
+      { "answer": "1500", "question": "¿cuándo se crea la presidencia de la Mesta por los Reyes católicos, cuyo presidente era el mayor de los miembros del Consejo Real?" },
+      { "answer": "26 de noviembre de 1504", "question": "¿En qué feca murió Isabel I, ''la Católica''? dd/mm/aaaa" },
+      { "answer": "25 de septiembre de 1506", "question": "¿En qué fecha murió Felipe I, ''El hermoso''? dd/mm/aaaa" },
+      { "answer": "7 de marzo de 1505", "question": "¿en qué fecha fueron promulgadas las leyes de Toro? dd/mm/aaaa" },
+      { "answer": "del 28 de enero al 25 de mayo de 1521", "question": "¿De qué fecha a qué fecha se celebró la dieta de Worms? dd/mm/aaaa", "explicacion" : "Fue la asamblea convocada por Carlos V, emperador del Sacro Imperio romano, para abordar las obras del reformistaMartín Lutero(1483-1546), en las que criticaba abiertamente a la Iglesia. Se exigió a Lutero que se retractase y, al no hacerlo, fue acusado de herejía, lo que marcó su ruptura oficial con la Iglesia."}
+      
     ],
     "cultura-g": [
-      {
-        "question": "¿Cuál es el idioma más hablado en las comunidades indígenas de México?",
-        "answer": "Náhuatl"
-      },
-      {
-        "question": "¿Qué es el 'pago a la tierra' en la cultura andina?",
-        "answer": "Un ritual de agradecimiento a la Pachamama"
-      }
+      { "answer": "10%", "question": "¿Cuál era el porcentaje de la alcabala?"},		
+{ "answer": "alcabala", "question": "¿De qué impuesto se trata? Se aplica a todas las transacciones, excepto el pan cocido, los granos, los caballos y mulas, las armas y los libros. El vendedor paga una mitad, el comprador la otra. El rey y el clero están exentos del impuesto, salvo si se hace comercio con meta lucrativa. Las ciudades de ferias, los mercados francos, Biscaya y otras ciudades se benefician de una franqueza"},		
+{ "answer": "sastre", "question": "¿De qué profesión se trata? alfayate"},		
+{ "answer": "artesano", "question": "¿De qué profesión se trata? Artífice"},		
+{ "answer": "la Mesta", "question": "¿Cual era la principal actividad económica de los reinados de los reyes católicos?"},		
+{ "answer": "las leyes de Toro", "question": "Un conjunto de 83 leyes promulgadas el 7 de marzo de 1505 en nombre de la reina Juana I de Castilla"},		
+{ "answer": "su nieta", "question": "¿Qué relación de parentesco tenía María Tudor, reina de Inglaterra en 1553, con los reyes católicos?", "explicacion" : "Catalina de Aragón, hija de Fernando e Isabel y hermana mayor de Juana la Loca, fue casada con Arturo príncipe de Gales en 1501, y luego con el futuro Enrique VIII en 1503  conquien tuvo a María Tudor en 1516"}
     ],
     "personajes-celebres": [
-      {
-        "question": "¿Quién fue Bartolomé de las Casas?",
-        "answer": "Un fraile español defensor de los derechos de los indígenas"
-      },
-      {
-        "question": "¿Quién fue Rigoberta Menchú?",
-        "answer": "Una activista indígena guatemalteca y Premio Nobel de la Paz"
-      }
+      { "answer": "Alfonso XI", "question": "¿quién creó el alcabala?"},
+      { "answer": "Catalina de Aragón", "question": "hija de Fernando e Isabel, hermana mayor de Juana la Loca, casada con Arturo príncipe de Gales en 1501, y luego con el futuro Enrique VIII "},
+      { "answer": "Fernando de Habsburgo", "question": "¿Cómo se llamaba el hermano menor de Carlos V?"}      
     ],
     "citas": [
       {
         "question": "Completa la cita: 'Sin maíz no hay ______.'",
         "answer": "país"
-      },
+    },
       {
         "question": "¿Quién dijo: 'El respeto al derecho ajeno es la paz'?",
         "answer": "Benito Juárez"
       }
     ],
     "vocabulario": [
-      {
-        "question": "¿Qué significa la palabra 'huipil' en las comunidades indígenas de México?",
-        "answer": "Una prenda tradicional de las mujeres indígenas"
-      },
-      {
-        "question": "¿Qué es un 'ayllu' en la cultura andina?",
-        "answer": "Una comunidad familiar extendida con una economía compartida"
-      }
+      { "answer": "Alcabala", "question": "impuesto real de origen árabe creado en 1342 por Alfonso XI. Se aplica a todas las transacciones (10%), excepto el pan cocido, los granos, los caballos y mulas, las armas y los libros. El vendedor paga una mitad, el comprador la otra. El rey y el clero están exentos, salvo si se hace comercio con meta lucrativa. Las ciudades de ferias, los mercados francos, Biscaya y otras ciudades se benefician de una franqueza. Es el ingreso más importante de la corona."},
+{ "answer": "Asiento", "question": "Contrato de cambio a corto plazo entre la Corona y un particular, para pagar la guerra o asegurar la salida de la armada de Indias, o el arrendamiento de algunos impuesto. En cambio, el rey otorga al asentista un monopolio comercial con privilegios fiscales."},
+{ "answer": "Beneficio eclesiástico", "question": "cargo espiritual dotado de ingresos de bienes de la Iglesia. Obispados, abadías, capellanías, capítulos son beneficios otorgados por la Iglesia al que está en las órdenes"},
+{ "answer": "Buhonero", "question": "«El tendero que en una cesta grande, que trahe colgada del pescuezo, anda por las calles vendiendo cosas de poco valor como son agujas, alfileres, dedales, cuchillos, tijeras, y otras semejantes» (Aut.)"},
+{ "answer": "Bula de cruzada", "question": "Renta permanente de la Corona pagada tanto por los laicos como por el clero que tenían que pafar cada tres años los hombres, mujeres y niños que deseaban una bula de indulgencia"},
+{ "answer": "bulderos", "question": "Vendedores de bulas de indulgencia"},
+{ "answer": "Bula de cruzada", "question": "Impuesto eclesiástico normalmente destinad a la lucha contra los infieles, pero utilizado en españa, gracias a una merced papal de 1503 a Fernando, para la guerra de Granada."},
+{ "answer": "Bula de cruzada", "question": "Indulgencia que permitía sacar las almas del purgatorio"},
+{ "answer": "Mesta", "question": "un gremio o asociación profesional de origen medieval que agrupaba a los ganaderos dedicados a la transhumancia"},
+{ "answer": "Servicio", "question": "impuesto directo extraordinario votado por las Cortes a petición del rey cada tres años"},
+{ "answer": "montazgo", "question": "Tributo pagado por los ganados de la Mesta, dejando de ser estrictamente un derecho de paso, para convertirse en una contribución por los beneficios que dichos ganados obtenían."}
+
     ]
   }
   
