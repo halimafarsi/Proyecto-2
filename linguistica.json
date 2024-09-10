@@ -23,10 +23,152 @@
         "answer": ""
     }
 ],
-"vocabulario":[
-    {
-        "question": "",
-        "answer": ""
-    }
-]
-}
+    "vocabulario": [
+      {
+        "question": "p / b",
+        "answer": "consonne occlusive bilabiale sourde / sonore",
+        "explicacion": "papa / bateau"
+      },
+      {
+        "question": "t / d",
+        "answer": "occlusive dentale sourde / sonore",
+        "explicacion": "table / dix"
+      },
+      {
+        "question": "k / g",
+        "answer": "occlusive vélaire sourde / sonore",
+        "explicacion": "corps / gaz"
+      },
+      {
+        "question": "[ƀ, đ, ǥ]",
+        "answer": "allophones fricatifs des occl. bil., dent., vél. sonores",
+        "explicacion": "baba, dado, gogo"
+      },
+      {
+        "question": "ŝ / ẑ",
+        "answer": "affriquée alvéolaire sourde / sonore",
+        "explicacion": "tsétsé / pizza (pro fr)"
+      },
+      {
+        "question": "ĉ",
+        "answer": "affriquée palatale sourde",
+        "explicacion": "chachacha"
+      },
+      {
+        "question": "f",
+        "answer": "fricative labiale sourde",
+        "explicacion": "faim"
+      },
+      {
+        "question": "θ",
+        "answer": "fricative dentale sourde",
+        "explicacion": "ciudad (esp. Esp standard)"
+      },
+      {
+        "question": "s / z",
+        "answer": "fricative alvéolaire sourde / sonore",
+        "explicacion": "sable / zéro"
+      },
+      {
+        "question": "[ṡ]",
+        "answer": "fricative apicoalvéolaire sourde",
+        "explicacion": "casa (esp. Esp standard)"
+      },
+      {
+        "question": "[ș]",
+        "answer": "fricative prédorsodentale sourde",
+        "explicacion": "casa (esp. Am. + méridionnal) / santé"
+      },
+      {
+        "question": "š / ž",
+        "answer": "fricative palatale sourde / sonore",
+        "explicacion": "chemin / je"
+      },
+      {
+        "question": "y",
+        "answer": "fricative palatale centrale sonore",
+        "explicacion": "rayo"
+      },
+      {
+        "question": "x",
+        "answer": "fricative vélaire sourde",
+        "explicacion": "joven"
+      },
+      {
+        "question": "m",
+        "answer": "nasale bilabiale sonore",
+        "explicacion": "main"
+      },
+      {
+        "question": "n",
+        "answer": "nasale dentale sonore",
+        "explicacion": "nager"
+      },
+      {
+        "question": "ɲ",
+        "answer": "nasale palatale sonore",
+        "explicacion": "agneau"
+      },
+      {
+        "question": "l",
+        "answer": "liquide latérale alvéolaire",
+        "explicacion": "lune"
+      },
+      {
+        "question": "ʎ",
+        "answer": "liquide latérale palatale",
+        "explicacion": "lluvia"
+      },
+      {
+        "question": "ɾ",
+        "answer": "liquide vibrante alvéolaire simple",
+        "explicacion": "pero"
+      },
+      {
+        "question": "r",
+        "answer": "liquide vibrante alvéolaire multiple",
+        "explicacion": "perro"
+      },
+      {
+        "question": "[h]",
+        "answer": "spirante pharyngée aspirée",
+        "explicacion": "hijo (andalous)"
+      },
+      {
+        "question": "[j]",
+        "answer": "semi-consonne / semi-voyelle palatale (yod)",
+        "explicacion": "cielo / peine"
+      },
+      {
+        "question": "[w]",
+        "answer": "semi-consonne / semi-voyelle vélaire (wé)",
+        "explicacion": "dueño / deuda"
+      },
+      {
+        "question": "i",
+        "answer": "voyelle palatale fermée",
+        "explicacion": "vie"
+      },
+      {
+        "question": "u",
+        "answer": "voyelle vélaire fermée",
+        "explicacion": "sous"
+      },
+      {
+        "question": "e",
+        "answer": "voyelle palatale moyenne / (mi-ouverte)",
+        "explicacion": "clé"
+      },
+      {
+        "question": "o",
+        "answer": "voyelle vélaire moyenne / (mi-ouverte)",
+        "explicacion": "or"
+      },
+      {
+        "question": "a",
+        "answer": "voyelle centrale ouverte",
+        "explicacion": "pas"
+      }
+    ]
+  }
+  
