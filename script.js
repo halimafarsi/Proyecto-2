@@ -1,97 +1,126 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const mainMenu = document.getElementById('main-menu');
-    const subcategoryMenu = document.getElementById('subcategory-menu');
-    const gameSection = document.getElementById('game-section');
-    const resultSection = document.getElementById('result-section');
-    const categoryTitle = document.getElementById('category-title');
-    const questionText = document.getElementById('question-text');
-    const answerInput = document.getElementById('answer-input');
-    const feedback = document.getElementById('feedback');
-    const scoreElement = document.getElementById('score');
-    const finalScoreElement = document.getElementById('final-score');
-    const replayButton = document.getElementById('replay-button');
+let preguntas = [];
+let indicePreguntaActual = 0;
+let temporizadorJuego;
+let temporizadorExplicacion;
+let temporizadorContador;
+let categoriaSeleccionada = "";
+let subcategoriaSeleccionada = "";
+let puntuacion = 0;
+let tiempoRestante = 10; // Tiempo en segundos para ver la respuesta y la explicación
 
-    let currentCategory = '';
-    let currentSubcategory = '';
-    let questions = [];
-    let currentIndex = 0;
-    let score = 0;
+// Función para seleccionar categoría
+function seleccionarCategoria(categoria) {
+    categoriaSeleccionada = categoria;
+    document.getElementById('categoria-seleccion').style.display = 'none';
+    document.getElementById('subcategoria-seleccion').style.display = 'block';
+}
 
-    // Función para cargar la base de datos de preguntas
-    async function loadQuestions(category) {
-        try {
-            const response = await fetch(`${category}.json`);
-            const data = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error al cargar la base de datos:', error);
+// Función para seleccionar subcategoría
+function seleccionarSubcategoria(subcategoria) {
+    subcategoriaSeleccionada = subcategoria;
+    cargarPreguntas();
+}
+
+// Función para cargar preguntas desde el archivo JSON correspondiente
+function cargarPreguntas() {
+    fetch(`${categoriaSeleccionada}.json`)
+        .then(response => response.json())
+        .then(data => {
+            preguntas = data[subcategoriaSeleccionada];
+            mostrarRespuestasPrevias();
+        });
+}
+
+// Función para mostrar todas las respuestas antes de comenzar
+function mostrarRespuestasPrevias() {
+    let respuestas = preguntas.map(p => p.answer).join(', ');
+    document.getElementById('juego').style.display = 'block';
+    document.getElementById('pregunta').innerText = "Revisa estos conceptos antes de empezar:";
+    document.getElementById('resultado').innerText = respuestas;
+    document.getElementById('explicacion').innerText = '';
+    
+    temporizadorJuego = setTimeout(empezarJuego, 30000); // Espera 30 segundos antes de comenzar
+}
+
+// Función para comenzar el juego
+function empezarJuego() {
+    document.getElementById('pregunta').innerText = preguntas[indicePreguntaActual].question;
+    document.getElementById('resultado').innerText = '';
+    document.getElementById('respuesta-input').value = '';
+    document.getElementById('respuesta-input').focus();
+    
+    tiempoRestante = 10; // Reiniciar el tiempo
+    actualizarContador();
+
+    clearTimeout(temporizadorJuego); // Limpia el temporizador de respuestas previas
+}
+
+// Función para validar respuesta
+function validarRespuesta() {
+    let respuestaJugador = document.getElementById('respuesta-input').value;
+    let respuestaCorrecta = preguntas[indicePreguntaActual].answer;
+    let explicacion = preguntas[indicePreguntaActual].explicacion;
+
+    if (respuestaJugador.trim().toLowerCase() === respuestaCorrecta.toLowerCase()) {
+        document.getElementById('resultado').innerText = "¡Correcto!";
+        puntuacion++;
+        document.getElementById('score').innerText = `Puntuación: ${puntuacion}`;
+        setTimeout(cargarSiguientePregunta, 10000); // 10 segundos para mostrar el resultado correcto
+    } else {
+        document.getElementById('resultado').innerText = `Incorrecto. La respuesta correcta es: ${respuestaCorrecta}`;
+        if (explicacion) {
+            document.getElementById('explicacion').innerText = `Explicación: ${explicacion}`;
         }
+        temporizadorExplicacion = setTimeout(cargarSiguientePregunta, 10000); // 10 segundos para mostrar la explicación
     }
+}
 
-    function startGame(category) {
-        currentCategory = category;
-        mainMenu.style.display = 'none';
-        subcategoryMenu.style.display = 'block';
+// Función para cargar la siguiente pregunta
+function cargarSiguientePregunta() {
+    clearTimeout(temporizadorExplicacion); // Limpia el temporizador de explicación
+    indicePreguntaActual++;
+    if (indicePreguntaActual < preguntas.length) {
+        empezarJuego();
+    } else {
+        mostrarResultadoFinal();
     }
+}
 
-    async function startSubcategory(subcategory) {
-        currentSubcategory = subcategory;
-        const data = await loadQuestions(currentCategory);
-        questions = data[currentSubcategory].sort(() => Math.random() - 0.5).slice(0, 10);
-        currentIndex = 0;
-        score = 0;
-        categoryTitle.textContent = `${currentCategory} - ${currentSubcategory}`;
-        subcategoryMenu.style.display = 'none';
-        gameSection.style.display = 'block';
-        loadNextQuestion();
-    }
+// Función para mostrar el resultado final
+function mostrarResultadoFinal() {
+    document.getElementById('juego').style.display = 'none';
+    document.getElementById('resultado-final').style.display = 'block';
+    document.getElementById('final-score').innerText = `Puntuación Final: ${puntuacion}`;
+}
 
-    function loadNextQuestion() {
-        if (currentIndex < questions.length) {
-            questionText.textContent = questions[currentIndex].question;
+// Función para reiniciar el juego
+function reiniciarJuego() {
+    puntuacion = 0;
+    indicePreguntaActual = 0;
+    document.getElementById('categoria-seleccion').style.display = 'block';
+    document.getElementById('subcategoria-seleccion').style.display = 'none';
+    document.getElementById('juego').style.display = 'none';
+    document.getElementById('resultado-final').style.display = 'none';
+    clearTimeout(temporizadorJuego);
+    clearTimeout(temporizadorExplicacion);
+    clearTimeout(temporizadorContador);
+}
+
+// Función para actualizar la barra de progreso del temporizador
+function actualizarContador() {
+    let barra = document.getElementById('contador');
+    let tiempoDisplay = document.getElementById('tiempo-restante');
+    
+    let interval = setInterval(() => {
+        if (tiempoRestante <= 0) {
+            clearInterval(interval);
+            if (indicePreguntaActual < preguntas.length) {
+                cargarSiguientePregunta();
+            }
         } else {
-            endGame();
+            tiempoDisplay.innerText = `Tiempo restante: ${tiempoRestante}s`;
+            barra.style.width = `${(tiempoRestante / 10) * 100}%`;
+            tiempoRestante--;
         }
-    }
-
-    function checkAnswer() {
-        const correctAnswer = questions[currentIndex].answer.toLowerCase();
-        const userAnswer = answerInput.value.trim().toLowerCase();
-
-        if (userAnswer === correctAnswer) {
-            feedback.textContent = '¡Correcto!';
-            score++;
-        } else {
-            feedback.textContent = `Incorrecto. La respuesta correcta es: ${questions[currentIndex].answer}`;
-        }
-
-        scoreElement.textContent = `Puntuación: ${score}`;
-        currentIndex++;
-        answerInput.value = '';
-        loadNextQuestion();
-    }
-
-    function endGame() {
-        gameSection.style.display = 'none';
-        resultSection.style.display = 'block';
-        finalScoreElement.textContent = `Tu puntuación final es: ${score} de ${questions.length}`;
-    }
-
-    document.getElementById('btnPanama').addEventListener('click', () => startGame('panama'));
-    document.getElementById('btnComunidades').addEventListener('click', () => startGame('comunidades'));
-    document.getElementById('btnLiteratura').addEventListener('click', () => startGame('literatura'));
-    document.getElementById('btnLinguistica').addEventListener('click', () => startGame('linguistica'));
-    document.getElementById('btnCatalan').addEventListener('click', () => startGame('catalan'));
-
-    document.getElementById('btnFechas').addEventListener('click', () => startSubcategory('fechas'));
-    document.getElementById('btnCulturaG').addEventListener('click', () => startSubcategory('culturaG'));
-    document.getElementById('btnPersonajes').addEventListener('click', () => startSubcategory('personajes'));
-    document.getElementById('btnCitas').addEventListener('click', () => startSubcategory('citas'));
-    document.getElementById('btnVocabulario').addEventListener('click', () => startSubcategory('vocabulario'));
-
-    document.getElementById('submit-answer').addEventListener('click', checkAnswer);
-    replayButton.addEventListener('click', () => {
-        resultSection.style.display = 'none';
-        mainMenu.style.display = 'block';
-    });
-});
+    }, 1000);
+}

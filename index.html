@@ -3,45 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Preguntas y Respuestas</title>
+    <title>¿Cuánto sabes?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Juego de Preguntas y Respuestas</h1>
-        <div id="main-menu">
-            <h2>Selecciona una categoría:</h2>
-            <button id="btnPanama">Panamá</button>
-            <button id="btnComunidades">Comunidades</button>
-            <button id="btnLiteratura">Literatura</button>
-            <button id="btnLinguistica">Lingüística</button>
-            <button id="btnCatalan">Catalán</button>
-        </div>
-
-        <div id="subcategory-menu" style="display: none;">
-            <h2>Selecciona una subcategoría:</h2>
-            <button id="btnFechas">Fechas</button>
-            <button id="btnCulturaG">Cultura G</button>
-            <button id="btnPersonajes">Personajes Célebres</button>
-            <button id="btnCitas">Citas</button>
-            <button id="btnVocabulario">Vocabulario</button>
-        </div>
-
-        <div id="game-section" style="display: none;">
-            <h2 id="category-title"></h2>
-            <p id="question-text"></p>
-            <input type="text" id="answer-input" placeholder="Escribe tu respuesta...">
-            <button id="submit-answer">Enviar Respuesta</button>
-            <p id="feedback"></p>
-            <p id="score">Puntuación: 0</p>
-        </div>
-
-        <div id="result-section" style="display: none;">
-            <h2>Resultado Final</h2>
-            <p id="final-score"></p>
-            <button id="replay-button">Jugar de nuevo</button>
-        </div>
+    <div id="categoria-seleccion">
+        <button onclick="seleccionarCategoria('comunidades')">Comunidades</button>
+        <button onclick="seleccionarCategoria('panama')">Panamá</button>
+        <button onclick="seleccionarCategoria('linguistica')">Lingüística</button>
+        <button onclick="seleccionarCategoria('literatura')">Literatura</button>
+        <button onclick="seleccionarCategoria('catalan')">Catalán</button>
     </div>
+
+    <div id="subcategoria-seleccion" style="display: none;">
+        <button onclick="seleccionarSubcategoria('fechas')">Fechas</button>
+        <button onclick="seleccionarSubcategoria('cultura')">Cultura G</button>
+        <button onclick="seleccionarSubcategoria('personajes')">Personajes Célebres</button>
+        <button onclick="seleccionarSubcategoria('citas')">Citas</button>
+        <button onclick="seleccionarSubcategoria('vocabulario')">Vocabulario</button>
+    </div>
+
+    <div id="juego" style="display: none;">
+        <h1 id="pregunta"></h1>
+        <input type="text" id="respuesta-input" placeholder="Escribe tu respuesta...">
+        <button id="enviar-respuesta" onclick="validarRespuesta()">Enviar</button>
+        <p id="resultado"></p>
+        <p id="explicacion"></p>
+        <div id="juego" style="display: none;">
+            <h1 id="pregunta"></h1>
+            <div id="timer-container">
+                <div id="timer"></div>
+            </div>
+            <input type="text" id="respuesta-input" placeholder="Escribe tu respuesta...">
+            <button id="enviar-respuesta" onclick="validarRespuesta()">Enviar</button>
+            <p id="resultado"></p>
+            <p id="explicacion"></p>
+        </div>
+        
+        <p id="score" style="display: none;">Puntuación: 0</p>
+    </div>
+
+    <div id="resultado-final" style="display: none;">
+        <h2>Resultado Final</h2>
+        <p id="final-score">Puntuación: 0</p>
+        <button id="replay-button" onclick="reiniciarJuego()">Jugar de nuevo</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
